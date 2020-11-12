@@ -1,0 +1,28 @@
+JavaFX GUI with two panes
+	One displays the solar system and can hopefully be clicked on to select objects
+	Other shows the details about the planet/moon being selected
+
+Download JSON from online solar system api.
+	Use this json data to draw the solar system on a canvas
+	
+Click EventHandler to update the right side pane with the data for the canvas item clicked on.
+	
+Save JSON to disk and automatically load it on program start.
+
+Patterns n' Stuff
+	Factory Pattern for creating different types of Celestial Bodies
+	Maybe MVC?
+		View = GUI
+		Controller = Not quite sure.  Maybe the EventHandlers?
+		Model = JSON Data
+		
+	Inheritance
+		Celesial Body (Abstract)
+			Sun
+			Planet
+			Moon
+		
+Maybe (Feature Creep)
+	Give it a play button that lets you see the objects move in their orbits.
+	This is kinda api dependent, unless I do the math myself.
+	May just use something like average orbital velocity.
